@@ -1,5 +1,3 @@
-/*Annie Shen(ashen7@ucsc.edu)*/
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<ctype.h>
@@ -77,10 +75,11 @@ int main(int argc, char* argv[]){
         reinit(num);
         reinit(punc);
         reinit(white);
+        
         line++;
     }
 
-    //free heap memory
+    //free heap memory and initialize chars
     free(input);
     free(chara);
     free(num);
@@ -107,19 +106,19 @@ void extract_chars(char* s, char* a, char* d, char* p, char* w) {
     int l=0;
     int m=0;
     while(s[i]!='\0' && i < MAX_STRING_LENGTH) {
-        if (isalpha(s[i])) {
+        if (isalpha(s[i])) { //insert when is alphabet
             a[j] = s[i];
             j++;
         }
-        if (isdigit(s[i])) {
+        if (isdigit(s[i])) { //insert when is digit
             d[k] = s[i];
             k++;
         }
-        if (ispunct(s[i])) {
+        if (ispunct(s[i])) { //insert when is punctuation
             p[l] = s[i];
             l++;
         }
-        if (isspace(s[i])) {
+        if (isspace(s[i])) { //insert when is whitespace
             w[m] = s[i];
             m++;
         }
@@ -127,6 +126,7 @@ void extract_chars(char* s, char* a, char* d, char* p, char* w) {
     }
 }
 
+//char count
 int count(char* c){
         int i = 0;
         while(c[i] != '\0'){
@@ -135,6 +135,7 @@ int count(char* c){
         return i;
 }
 
+//re-initualize chars
 void reinit(char* x){
         int j = 0;
         while(j <= MAX_STRING_LENGTH ){

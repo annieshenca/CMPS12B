@@ -1,6 +1,5 @@
 //----------------------------------------------------------------------
 // Dictionary.java
-// Annie Shen (ashen7@ucsc.edu)
 //----------------------------------------------------------------------
 
 public class Dictionary implements DictionaryInterface {

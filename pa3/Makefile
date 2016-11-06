@@ -1,5 +1,4 @@
 #-----------------------------------------------------------------------
-#  Makefile for CMPS 12B pa3
 #  This Makefile uses wildcards and pattern substitution, which have not
 #  been explained in any previous assignment.  See the GNU Make tutorial 
 #       http://www.gnu.org/software/make/manual/make.html

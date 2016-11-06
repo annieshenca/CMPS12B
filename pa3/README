@@ -1,8 +1,3 @@
-Annie Shen
-ashen7@ucsc.edu
-CMPS 12B/M Pa3
-Due: Nov 4, 2016
-
 Table of Contents:
 -README
 -Dictionary.java
@@ -12,5 +7,3 @@ Table of Contents:
 -DictionaryInterface.java
 -DictionaryClient.java
 -Makefile
-
-(total: 8 files)

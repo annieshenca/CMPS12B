@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 class FileTokens{
     public static void main(String[] args) throws IOException{
-        int lineNumber = 0;
+        int lineNumber = 0; //initialize line number
 
         if(args.length <2){
             System.out.println("Usage: FileCopy <input file> <output file>");

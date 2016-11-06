@@ -1,7 +1,3 @@
-//Annie Shen(ashen7@ucsc.edu)
-//CMPS 12B/M
-//PA1: Recursion.java
-
 class Recursion{
     
     //reverseArray1
