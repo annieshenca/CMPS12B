@@ -1,2 +1,2 @@
-# CS12B
+# CS12B - Data Structure
 
