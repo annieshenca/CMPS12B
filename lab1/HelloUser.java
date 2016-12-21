@@ -1,6 +1,10 @@
+//Annie Shen
+//1562848
+//CMPS 12M
+//I worked on this lab by myself
+
 //HelloUser.java
 //Prints greeting to stdout, then prints out some environment information.
-
 class HelloUser{
     public static void main(String[] args){
         String userName = System.getProperty("user.name");

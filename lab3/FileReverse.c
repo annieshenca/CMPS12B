@@ -1,13 +1,24 @@
 /*
 *FileReverse.c
+*Annie Shen (ashen7@ucsc.edu)
+*CMPS 12B/M Lab 3
+*Due on Oct 21, 2016
 */
 
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 
-void stringReverse(char* w);
-
+void stringReverse(char* w){
+        int i = 0;
+        int j = strlen(w)-1;
+        for(i=0; i<=j; i++){
+                char temp = w[i];
+                w[i] = w[j];
+                w[j] = temp;
+                j--;
+        }
+}
 int main(int argc, char * argv[]){
         FILE *in, *out;//handles for input and output files
         char word[256];//char array to store words from input file
@@ -44,14 +55,3 @@ int main(int argc, char * argv[]){
 
         return(EXIT_SUCCESS);
 }
-
-void stringReverse(char* w){
-    int i = 0;
-    int j = strlen(w)-1;
-    for(i=0; i<=j; i++){ 
-        char temp = w[i]; 
-        w[i] = w[j];
-        w[j] = temp;
-        j--; 
-    }
-} 

@@ -1,0 +1,12 @@
+Annie Shen
+CMPS 12B/M
+Lab 7_Due Dec 2
+
+Table of Content:
+-Dictionary.java
+-Makefile
+-README
+-DictionaryInterface.java
+-DuplicateKeyException.java
+-KeyNotFoundException.java
+-DictionaryClient.java

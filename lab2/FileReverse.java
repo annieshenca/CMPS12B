@@ -1,3 +1,7 @@
+//FileReverse.java
+//Annie Shen (ashen7@ucsc.edu)
+//CMPS12B/M
+//Due on OCt 7, 2016
 //this program is to reverse a given string from file in and remove whitespaces, and output a file out.
 
 import java.io.*;
@@ -11,16 +15,14 @@ class FileReverse{
             System.out.println("Usage: FileCopy <input file> <output file>");
             System.exit(1);
         }
-        
-        //scan input file
+
         Scanner in = new Scanner(new File(args[0]));
         PrintWriter out = new PrintWriter(new FileWriter(args[1]));
 
-        //while the input file has next line
         while(in.hasNextLine()){
             lineNumber++;
 
-            String line = in.nextLine().trim() + " "; //take away the whitespaces
+            String line = in.nextLine().trim() + " ";
 
             String[] token = line.split("\\s+");
 
@@ -35,7 +37,6 @@ class FileReverse{
         out.close();
     }
 
-    //Return reversed string recursivly until there's no more lines 
     public static String stringReverse(String s, int n){
         if(s.length() > 0){
             return stringReverse(s.substring(1), n-1) + s.charAt(0);

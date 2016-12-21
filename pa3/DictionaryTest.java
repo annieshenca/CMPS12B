@@ -1,8 +1,10 @@
-//for testing Dictionary.java
+//Annie Shen (ashen7@ucsc.edu)
+//Testing Dictionary.java
 
 class DictionaryTest{
 	public static void main(String[] args){
 		Dictionary D = new Dictionary();
+		//(key, value)
 		
 		System.out.println(D.isEmpty()); //true
 		D.insert("1", "A"); //insert
